@@ -57,6 +57,10 @@ const Register = () => {
 
       await axios.post("http://localhost:5000/users", userInfo);
 
+      // Get JWT token
+      const jwtRes = await axios.post("http://localhost:5000/jwt", { email });
+      localStorage.setItem("access-token", jwtRes.data.token);
+
       setUploading(false);
       navigate("/");
     } catch (err) {

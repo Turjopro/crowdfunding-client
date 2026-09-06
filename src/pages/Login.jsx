@@ -20,6 +20,11 @@ const Login = () => {
 
     try {
       await loginUser(email, password);
+
+      // Get JWT token
+      const jwtRes = await axios.post("http://localhost:5000/jwt", { email });
+      localStorage.setItem("access-token", jwtRes.data.token);
+
       setLoading(false);
       navigate("/");
     } catch (err) {
@@ -47,6 +52,9 @@ const Login = () => {
       } catch (err) {
         // if user already exists, backend returns 400 - that's fine, ignore
       }
+
+      const jwtRes = await axios.post("http://localhost:5000/jwt", { email: user.email });
+      localStorage.setItem("access-token", jwtRes.data.token);
 
       navigate("/");
     } catch (err) {
