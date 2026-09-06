@@ -18,7 +18,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-4">
-          <Link to="/explore" className="hover:text-blue-600">
+          <Link to="/explore-campaigns" className="hover:text-blue-600">
             Explore Campaigns
           </Link>
 
@@ -51,17 +51,17 @@ const Navbar = () => {
               >
                 Register
               </Link>
-            </>
-          )}
-          <a
-          
-            href="https://github.com/Turjopro/crowdfunding-client"
-            target="_blank"
-            rel="noreferrer"
-            className="border px-3 py-1.5 rounded hover:bg-gray-50"
-          >
-            Join as Developer
-          </a>
+                    </>
+        )}
+
+        <a
+          href="https://github.com/Turjopro/crowdfunding-client"
+          target="_blank"
+          rel="noreferrer"
+          className="border px-3 py-1.5 rounded hover:bg-gray-50"
+        >
+          Join as Developer
+        </a>
         </div>
       </div>
     </nav>
