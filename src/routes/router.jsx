@@ -14,6 +14,8 @@ import AddCampaign from "../pages/dashboard/AddCampaign";
 import MyCampaigns from "../pages/dashboard/MyCampaigns";
 import Withdrawals from "../pages/dashboard/Withdrawals";
 import CreatorPaymentHistory from "../pages/dashboard/CreatorPaymentHistory";
+import MyContributions from "../pages/dashboard/MyContributions";
+import PurchaseCredit from "../pages/dashboard/PurchaseCredit";
 
 const router = createBrowserRouter([
   {
@@ -46,8 +48,8 @@ const router = createBrowserRouter([
       { path: "supporter-home", element: <SupporterHome /> },
       { path: "creator-home", element: <CreatorHome /> },
       { path: "admin-home", element: <AdminHome /> },
-      { path: "my-contributions", element: <div>My Contributions (Coming Soon)</div> },
-      { path: "purchase-credit", element: <div>Purchase Credit (Coming Soon)</div> },
+      { path: "my-contributions", element: <MyContributions /> },
+      { path: "purchase-credit", element: <PurchaseCredit /> },
       { path: "payment-history", element: <CreatorPaymentHistory /> },
       { path: "add-campaign", element: <AddCampaign /> },
       { path: "my-campaigns", element: <MyCampaigns /> },
@@ -56,6 +58,7 @@ const router = createBrowserRouter([
       { path: "manage-campaigns", element: <div>Manage Campaigns (Coming Soon)</div> },
       { path: "withdrawal-requests", element: <div>Withdrawal Requests (Coming Soon)</div> },
       { path: "reports", element: <div>Reports (Coming Soon)</div> },
+      
     ],
   },
 ]);
