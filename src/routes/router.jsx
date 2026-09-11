@@ -16,6 +16,8 @@ import Withdrawals from "../pages/dashboard/Withdrawals";
 import CreatorPaymentHistory from "../pages/dashboard/CreatorPaymentHistory";
 import MyContributions from "../pages/dashboard/MyContributions";
 import PurchaseCredit from "../pages/dashboard/PurchaseCredit";
+import PaymentHistory from "../pages/dashboard/PaymentHistory";
+import SupporterPaymentHistory from "../pages/dashboard/SupporterPaymentHistory";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
       { path: "admin-home", element: <AdminHome /> },
       { path: "my-contributions", element: <MyContributions /> },
       { path: "purchase-credit", element: <PurchaseCredit /> },
-      { path: "payment-history", element: <CreatorPaymentHistory /> },
+   { path: "payment-history", element: <PaymentHistory /> },
       { path: "add-campaign", element: <AddCampaign /> },
       { path: "my-campaigns", element: <MyCampaigns /> },
       { path: "withdrawals", element: <Withdrawals /> },
