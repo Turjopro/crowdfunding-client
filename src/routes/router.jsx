@@ -12,6 +12,8 @@ import CreatorHome from "../pages/dashboard/CreatorHome";
 import AdminHome from "../pages/dashboard/AdminHome";
 import AddCampaign from "../pages/dashboard/AddCampaign";
 import MyCampaigns from "../pages/dashboard/MyCampaigns";
+import Withdrawals from "../pages/dashboard/Withdrawals";
+import CreatorPaymentHistory from "../pages/dashboard/CreatorPaymentHistory";
 
 const router = createBrowserRouter([
   {
@@ -46,10 +48,10 @@ const router = createBrowserRouter([
       { path: "admin-home", element: <AdminHome /> },
       { path: "my-contributions", element: <div>My Contributions (Coming Soon)</div> },
       { path: "purchase-credit", element: <div>Purchase Credit (Coming Soon)</div> },
-      { path: "payment-history", element: <div>Payment History (Coming Soon)</div> },
+      { path: "payment-history", element: <CreatorPaymentHistory /> },
       { path: "add-campaign", element: <AddCampaign /> },
       { path: "my-campaigns", element: <MyCampaigns /> },
-      { path: "withdrawals", element: <div>Withdrawals (Coming Soon)</div> },
+      { path: "withdrawals", element: <Withdrawals /> },
       { path: "manage-users", element: <div>Manage Users (Coming Soon)</div> },
       { path: "manage-campaigns", element: <div>Manage Campaigns (Coming Soon)</div> },
       { path: "withdrawal-requests", element: <div>Withdrawal Requests (Coming Soon)</div> },
